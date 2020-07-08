@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.icecream.cc.ilovewords.ShowWordDetailActivity"
+    android:background="@drawable/bg006">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+            <TextView
+                android:id="@+id/tv_wordNameInDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="hello"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"/>
+            <ImageView
+                android:id="@+id/iv_addImg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/jia"/>
+            <ImageView
+                android:id="@+id/iv_shareImg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/share"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_wordIPAInDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[həˈləʊ]"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_wordMeaningInDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="n.哈罗，喂，你好;"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="例句"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/tv_wordExampleInDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello,Icecream!\n你好，Icecream！"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

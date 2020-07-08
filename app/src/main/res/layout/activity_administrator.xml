@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.icecream.cc.ilovewords.AdministratorActivity"
+    android:background="@drawable/bg002">
+
+
+    <ListView
+        android:id="@+id/lv_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="添加\n单词"
+        android:id="@+id/bt_adminAddWord"
+        android:background="@drawable/button_circle_shape"
+        android:layout_marginRight="15dp"
+        android:layout_above="@+id/bt_aminViewLoginLog"
+        android:layout_alignStart="@+id/bt_downloadWords" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="登录日志"
+        android:id="@+id/bt_aminViewLoginLog"
+        android:layout_above="@+id/bt_sendUserInfoToServer"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_circle_shape"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="发送用户\n信息到\n服务器"
+        android:id="@+id/bt_sendUserInfoToServer"
+        android:background="@drawable/button_circle_shape"
+        android:layout_above="@+id/bt_downloadWords"
+        android:layout_alignEnd="@+id/bt_downloadWords"
+        android:layout_marginRight="-15dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="下载\n单词"
+        android:id="@+id/bt_downloadWords"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_circle_shape"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>
